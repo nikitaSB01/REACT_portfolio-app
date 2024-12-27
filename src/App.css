@@ -1,0 +1,40 @@
+#root {
+  width: 100vw; /* Занимает всю ширину экрана */
+  min-height: 100vh; /* Занимает всю высоту экрана */
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  display: flex; /* Используем flex для центровки содержимого */
+  flex-direction: column; /* Элементы располагаются вертикально */
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.toolbar .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.project-list {
+  column-count: 3; /* Устанавливаем 3 колонки, можно регулировать */
+  column-gap: 10px; /* Расстояние между колонками */
+  padding: 10px; /* Отступы внутри контейнера */
+  width: 100%; /* Контейнер занимает всю ширину экрана */
+  box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+.project-list img {
+  width: 100%; /* Изображение занимает всю ширину своей "колонки" */
+  margin-bottom: 10px; /* Расстояние между изображениями */
+  display: block; /* Убираем дополнительные отступы между inline-элементами */
+  border-radius: 5px; /* Лёгкое закругление углов */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем лёгкую тень */
+}
